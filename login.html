@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Cadastro</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <main>
+      <form id="authForm">
+        <div id="cadastro">
+          <h1>Cadastro</h1>
+
+          <label for="name" id="name">Nome:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" />
+
+          <label for="confirmPassword">Confirmar Senha:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" />
+        </div>
+
+        <div id="login" style="display: none">
+          <h1>Login</h1>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <button type="submit">Entrar</button>
+
+        <p>
+          <span id="loginLink">
+            Já tem uma conta? <a href="#">Entrar</a>
+          </span>
+          <span id="cadastroLink" style="display: none">
+            Não tem uma conta? <a href="#">Cadastre-se</a>
+          </span>
+        </p>
+      </form>
+    </main>
+    <script src="dist/login.bundle.js"></script>
+  </body>
+</html>

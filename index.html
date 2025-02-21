@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Controle de Horas Complementares</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="div-header">
+        <button id="logoutBtn">Sair</button>
+      </div>
+      <h1>Sistema de Controle de Horas Complementares</h1>
+
+      <div class="flex-container">
+        <form id="formulario">
+          <div>
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Descreva a atividade realizada"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+              <option value="extensao">Extensão</option>
+              <option value="pesquisa">Pesquisa</option>
+              <option value="ensino">Ensino</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="tipoAtividade">Tipo de atividade:</label>
+            <select id="tipoAtividade" name="tipoAtividade" disabled></select>
+          </div>
+
+          <div>
+            <label for="horas">Horas:</label>
+            <input
+              type="number"
+              id="horas"
+              name="horas"
+              placeholder="Informe a quantidade de horas da atividade"
+              required
+            />
+          </div>
+
+          <div class="btn-container">
+            <button type="button" id="salvarBtn">Salvar</button>
+          </div>
+        </form>
+
+        <div class="summary">
+          <div class="summary-item">
+            <h3>Horas de Extensão</h3>
+            <p class="summary-value" id="horasExtensao">0.0</p>
+          </div>
+          <div class="summary-item">
+            <h3>Horas de Pesquisa</h3>
+            <p class="summary-value" id="horasPesquisa">0.0</p>
+          </div>
+          <div class="summary-item">
+            <h3>Horas de Ensino</h3>
+            <p class="summary-value" id="horasEnsino">0.0</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Atividades Realizadas</h2>
+
+      <table id="tabelaAtividades">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Tipo de Atividade</th>
+            <th>Horas</th>
+            <th>Horas aproveitadas</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script src="dist/main.bundle.js"></script> </body>
+  </body>
+</html>

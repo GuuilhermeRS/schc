@@ -1,0 +1,37 @@
+/* Estilos para a tela de login/cadastro */
+#authForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#authForm div {
+  margin-bottom: 10px;
+}
+
+#authForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#authForm input {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#authForm button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#cadastroFields {
+  margin-top: 10px;
+}
+
+#loginLink, #cadastroLink {
+  cursor: pointer;
+}
